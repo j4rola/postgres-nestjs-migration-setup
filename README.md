@@ -34,6 +34,10 @@ npx sequelize-cli db:migrate
 
 
 
+Many thanks to Onwuzor Victor for the blogpost that this repo is based on: https://victoronwuzor.medium.com/how-to-setup-sequelize-migration-in-a-nestjs-project-b4aec1f88612
+
+
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
