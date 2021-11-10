@@ -2,6 +2,38 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
+
+
+This project is a simple Nest.js infrastructure that allows for connecting to a Postgres database 
+using the Sequelize ORM (object relational mapper). Note that db credentials are fictional on this branch. 
+
+This project makes use of the sequelize cli, so to keep track of the all the commands needed, 
+a legend has been added below: 
+
+
+Install nest globally (Only needed if never done before): npm i -g @nestjs/cli
+
+Create new nest project(make sure you are cd'ed into the correct parent): nest new *project name* 
+
+Start server with Nodemon to track changes: npm run start:dev (or: nest start --watch) 
+
+Install sequelize, the sequelize cli, sequelize for typescript, and the postgres db driver as dependencies:
+npm install --save @nestjs/sequelize sequelize sequelize-cli sequelize-typescript pg-hstore pg
+
+Install sequelize types as a dependency: 
+npm install --save-dev @types/sequelize
+
+Create User Module: 
+nest generate module user 
+
+Generate migration file: 
+npx sequelize-cli migration:generate --name create-user
+
+Run migration: 
+npx sequelize-cli db:migrate
+
+
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
@@ -71,3 +103,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+
+
