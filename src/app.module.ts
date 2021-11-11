@@ -15,9 +15,9 @@ import { UserModule } from './user/user.module';
       dialect: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: process.env.USERNAME,
+      username: process.env.USERNAME,  //NOTE: Username and password are the pre-existing username and password that are used to access the postgres database. 
       password: process.env.PASSWORD,
-      database: process.env.DATABASE,
+      database: process.env.DATABASE,  
       models: [User],
 
     }),
